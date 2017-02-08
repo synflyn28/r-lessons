@@ -19,3 +19,11 @@ myvec[myvec<0] <- -200
 which(x=c(T, F, F, T, T))
 which(x=myvec<0)
 myvec[-which(x=myvec<0)]
+
+#Logical subsetting for multidimensional arrays
+A <- rbind(c(0.3, 91, -4.2), c(4.5, 0.1, 8.2), c(55.3, 105.5, 27.9))
+A[c(T,F,F), c(F,T,T)]
+A<7
+A[A<7] <- -7
+which(x=A>25)
+which(x=A>25, arr.ind=TRUE)
