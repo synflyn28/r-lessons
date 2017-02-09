@@ -1,0 +1,38 @@
+---
+title: "Lesson 4.4 Excercises"
+output: html_notebook
+---
+
+### Question A.
+```{r Question A}
+cat("The quick brown fox\n   jumped over\n       the lazy dogs.")
+```
+
+### Question B.
+```{r}
+num1 <- 4
+num2 <- 0.75
+
+cat("The result of multiplying", num1, "by", num2, "is", num1*num2)
+```
+
+### Question C.
+```{r}
+davies_str <- "/Users/tdavies/Documents/RBook/"
+sub(x=davies_str, pattern="tdavies", replacement="jreid")
+```
+
+### Question D.
+```{r}
+bar <- "How much wood could a woodchuck chuck"
+full_quote <- paste(bar, "if a woodchuck could chuck wood")
+gsub(full_quote, pattern="wood", replacement="metal")
+```
+
+### Question E.
+```{r}
+foo <- "Two 6-packs for $12.99"
+substr(x=foo, start=5, stop=10) == "6-pack"
+gsub(foo, pattern="12.99", replacement="10.99")
+```
+
